@@ -4,6 +4,8 @@ import 'package:api_youtube/telas/inicio.dart';
 import 'package:api_youtube/telas/inscricao.dart';
 import 'package:flutter/material.dart';
 
+import 'custom_search_delegate.dart';
+
 class Home extends StatefulWidget {
   const Home({ Key key }) : super(key: key);
 
@@ -34,18 +36,23 @@ class _HomeState extends State<Home> {
         backgroundColor: Colors.white,
         title: Image.asset("images/youtube.png", width: 98, height: 22,),
         actions: <Widget>[
-          IconButton(
-            icon: const Icon(Icons.videocam),
-            onPressed: (){},
-          ),
-          IconButton(
+           IconButton(
             icon: const Icon(Icons.search),
-            onPressed: (){},
+            onPressed: () async{
+              String res = await showSearch(context: context, delegate: CustomSearchDelegate());
+            },
           ),
-          IconButton(
-            icon: const Icon(Icons.account_circle),
-            onPressed: (){},
-          )
+
+          // IconButton(
+          //   icon: const Icon(Icons.videocam),
+          //   onPressed: (){},
+          // ),
+          // IconButton(
+          //   icon: const Icon(Icons.account_circle),
+          //   onPressed: (){},
+          // )
+
+
         ],
       ),
       body: Container(
