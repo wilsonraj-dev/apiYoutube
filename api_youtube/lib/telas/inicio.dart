@@ -3,22 +3,25 @@ import 'package:api_youtube/model/video.dart';
 import 'package:flutter/material.dart';
 
 class Inicio extends StatefulWidget {
-  const Inicio({ Key key }) : super(key: key);
+  //const Inicio({ Key key }) : super(key: key);
+
+  String pesquisa;
+  Inicio(this.pesquisa, {Key key}) : super(key: key);
 
   @override
   _InicioState createState() => _InicioState();
 }
 
 class _InicioState extends State<Inicio> {
-  _listarVideos(){
+  _listarVideos(String pesquisa){
     Api api = Api();
-    return api.pesquisar("");
+    return api.pesquisar(pesquisa);
   }
 
   @override
   Widget build(BuildContext context) {
     return FutureBuilder<List<Video>>(
-      future: _listarVideos(),
+      future: _listarVideos(widget.pesquisa),
       // ignore: missing_return
       builder: (contex, snapshot) {
         switch(snapshot.connectionState){

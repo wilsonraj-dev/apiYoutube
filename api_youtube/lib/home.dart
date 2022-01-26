@@ -16,12 +16,13 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
 
   int _indiceAtual = 0;
+  String _resultado = "";
   @override
   Widget build(BuildContext context) {
 
     // ignore: unused_local_variable
     List<Widget> telas = [
-      const Inicio(),
+      Inicio(_resultado),
       const EmAlta(),
       const Inscricao(),
       const Biblioteca()
@@ -40,6 +41,9 @@ class _HomeState extends State<Home> {
             icon: const Icon(Icons.search),
             onPressed: () async{
               String res = await showSearch(context: context, delegate: CustomSearchDelegate());
+              setState(() {
+                _resultado = res;
+              });
             },
           ),
 
