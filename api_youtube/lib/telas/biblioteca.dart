@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 
 class Biblioteca extends StatefulWidget {
-  const Biblioteca({ Key? key }) : super(key: key);
+  const Biblioteca({ Key key }) : super(key: key);
 
   @override
   _BibliotecaState createState() => _BibliotecaState();
