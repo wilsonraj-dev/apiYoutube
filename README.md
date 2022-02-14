@@ -9,10 +9,6 @@
 
 ### Segue abaixo um pequeno vídeo explicativo do projeto
 
-<div style="display: inline_block"><br>
-  <img align="center" alt="cara" height="410" width="400" src="https://cdn.discordapp.com/attachments/758866002968182795/932815037784027196/Cara.PNG"/>
-</div>
-
 ##
 <div clas="linguagens">
   <img align="center" alt="wilson-Flutter" height="60" width="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg">
