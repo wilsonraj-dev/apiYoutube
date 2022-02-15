@@ -1,6 +1,6 @@
 # API Youtube
 
-## Esse é um projeto usando a linguagem Dart juntamente do framework Flutter. Nele, decidi fazer uma réplica do YouTube usando a própria API dele. A ideia era carregar vídeos de um determinado canal na interface inicial do aplicativo. A API utilizada foi a "YouTube Data API v3". No final do projeto pude chegar a conclusão que o desenvolvimento teve êxito conforme esperado, foi uma boa experiência para mim, onde consegui compreender melhor como se conectar a uma API externa e realizar as operações de chamadas na mesma. 
+## Esse é um projeto usando a linguagem Dart juntamente do framework Flutter. Nele, decidi fazer uma réplica do YouTube usando a sua própria API (YouTube Data API v3), a ideia era carregar vídeos de um determinado canal na interface inicial do aplicativo. No final do projeto pude chegar a conclusão que o desenvolvimento teve êxito conforme esperado, foi uma boa experiência para mim, onde consegui compreender melhor como se conectar a uma API externa realizando as requisições no código, e como os dados são devolvidos para o usuário na interface. 
 
 ### Para isso, consultei a documentação da própria API e também a página de desenvolvedores da Google.
 #### Segue o link da página contendo a documentação da API: https://developers.google.com/youtube/v3
